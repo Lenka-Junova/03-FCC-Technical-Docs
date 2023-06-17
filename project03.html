@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mock-up technical documentation page</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JS basics documentation</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Prerequisites">Prerequisites</a>
+      <a class="nav-link" href="#Hello_world">Hello World</a>
+      <a class="nav-link" href="#Variables_and_Constants"
+        >Variables and Constants</a
+      >
+      <a class="nav-link" href="#Data_Types">Data Types</a>
+      <a class="nav-link" href="#Functions">Functions</a>
+      <a class="nav-link" href="#More_Information">More Information</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          JavaScript is object-oriented scripting language. Originally used
+          mainly for front-end development (web sites), nowadays JavaScript is
+          being used for various purposes (web sites, applications, mobile
+          development, testing...).
+        </p>
+        <p>
+          JavaScript has also various libraries, frameworks and extensions to
+          make it general-purpose language. Coding with pure JavaScript (without
+          frameworks etc.) is called using "vanilla JavaScript". If we do not
+          want our program to work in linear way, we can also implement so
+          called asynchronous JavaScript.
+        </p>
+        <p>The most commonly used are:</p>
+        <ul>
+          <li>React</li>
+          <li>Angular</li>
+          <li>Node.js</li>
+          <li>Vue</li>
+          <li>Mocha</li>
+          <li>Express</li>
+        </ul>
+        <p>Note that this is a very simple breakdown of basics.</p>
+      </section>
+      <section class="main-section" id="Prerequisites">
+        <header>Prerequisites</header>
+        <p>
+          In order to start learning JavaScript, you should have general
+          knowledge of these topics:
+        </p>
+        <ul>
+          <li>Basic understanding of how Internet works.</li>
+          <li>Good knowledge of HTML (Hyper Text Mark-up Language).</li>
+          <li>Logical thinking.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>Hello World</header>
+        <p>
+          Too see general syntax, we can try write Hello World! in JavaScript:
+        </p>
+        <code
+          >function greetUs() {const a = "Hello"; let b = "World";return a + " "
+          + b;} console.log(greetUs());</code
+        >
+      </section>
+      <section class="main-section" id="Variables_and_Constants">
+        <header>Variables and Constants</header>
+        <p>
+          Variables are basic building blocks of JavaScript code. The purpose of
+          variable is to have a reference for a value stored in a code. Values
+          stored in variables can be overwritten. If you need to store one
+          unchanged piece of data, you should use constant.
+        </p>
+        <code>let nameOfVariable = "value"</code>
+        <code>const nameOfConstant = "value"</code>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <p>JavaScript has 7 data types (6 primitives and 1 complex):</p>
+        <ul>
+          <li>Numbers</li>
+          <li>Strings</li>
+          <li>Boolean</li>
+          <li>null</li>
+          <li>undefined</li>
+          <li>Symbols</li>
+          <li>Objects</li>
+        </ul>
+        <p>Objects are complex data type.</p>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>
+          The purpose of function is to essentialy make JavaScript do something.
+          We have 3 ways to create function in JavaScript:
+        </p>
+        <ul>
+          <li>
+            Function declaration:
+            <code
+              >function countingNumbers(){let a = 1; let b = a + a; return
+              b;}</code
+            >
+          </li>
+          <li>
+            Function expression:
+            <code
+              >const countedNumber = function (a) {let b = a + a;return
+              b;}</code
+            >
+          </li>
+          <li>
+            Arrow function syntax:
+            <code>const countedNumber = (a) => {let b = a + a; return b;}</code>
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="More_Information">
+        <header>More Information</header>
+        <p>
+          JavaScript has also multitude of other important elements to create a
+          well functioning program: operators, statements, methods, classes etc.
+        </p>
+        <p>
+          For more information please visit
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="_blank"
+            >MDN docs</a
+          >. Other good resources are:
+        </p>
+        <ul>
+          <li>
+            David Flanagan - JavaScript: The Definitive Guide, O'Reilly, 7th
+            ed., 2020
+          </li>
+          <li>
+            W3schools<a
+              href="https://www.w3schools.com/js/DEFAULT.asp"
+              target="_blank"
+            >
+              website
+            </a>
+          </li>
+          <li>
+            Codecademy
+            <a
+              href="https://www.codecademy.com/learn/introduction-to-javascript"
+              target="_blank"
+              >course</a
+            >
+          </li>
+        </ul>
+        <p>Good luck with your study!</p>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <p>
+        This is just short exercise for freeCodeCamp course on responsive web
+        design.
+      </p>
+      <p></p>
+    </footer>
+  </body>
+</html>
